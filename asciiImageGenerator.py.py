@@ -10,7 +10,7 @@ class asciiImageGenerator:
 
         aspectRatio = height / width
 
-        newHeight = int(newWidth * aspectRatio) - 10
+        newHeight = int(newWidth * aspectRatio * 0.43)
         resizedImage = image.resize((newWidth, newHeight))
 
         return resizedImage
